@@ -147,7 +147,9 @@ class ThreeLayerConvNet(object):
   
   
 class MyConv(object):
-  '''A network with arbitrary number of hidden units.
+  ''' This is a custom network I've wriiten to classify images, gives the option of using batchnorm 
+  and dropout, and also arbitrary number of conv,affine layers
+  A network with arbitrary number of hidden units.
      [conv-relu-pool-{dropout}]XL - [affine-{batchnorm}-relu]XM -affine-softmax
      Input : numpy array of shape (N, C, H, W )
      Output: scores for each class'''
